@@ -19,11 +19,35 @@ This project:
 
 ---
 
+---
 
-## 🧪 How It Works
+##  Features
+
+-  Supports 4 versions per chapter: `raw`, `writer`, `reviewer`, `final`
+-  Semantic Search using `all-MiniLM-L6-v2`
+-  Reinforcement Learning (RL) based scoring to suggest the best version
+-  ChromaDB with DuckDB-backed persistence
+
+---
+
+##  Usage
+
+### Install Requirements
+
+```bash
+pip install -r requirements.txt
+
+
+## How It Works
 
 ### Step 1: Add Versions to ChromaDB
 
 ```bash
 python versioning/chroma_db.py
+
+### Step 2:
+'''bash
+python versioning/rl_search.py
+
+
 
